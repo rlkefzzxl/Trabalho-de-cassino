@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RealDola — Demonstração</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, #3b1261, #0b0014 65%);
+  color: white;
+  min-height: 100vh;
+}
+
+/* CABEÇALHO */
+
+header {
+  padding: 20px;
+  text-align: center;
+  background: #12001f;
+  border-bottom: 2px solid #ffd000;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffd000;
+}
+
+.aviso {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #ffcf33;
+}
+
+/* SALDO */
+
+.saldo {
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #26103e, #4b176e);
+  box-shadow: 0 5px 25px #0008;
+}
+
+.saldo span {
+  color: #bbb;
+  font-size: 13px;
+}
+
+.saldo strong {
+  display: block;
+  margin-top: 5px;
+  font-size: 30px;
+  color: #00ff91;
+}
+
+/* CONTEÚDO */
+
+.container {
+  width: 92%;
+  max-width: 700px;
+  margin: auto;
+}
+
+h2 {
+  margin: 25px 0 15px;
+}
+
+/* JOGOS */
+
+.jogos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.jogo {
+  padding: 20px 10px;
+  text-align: center;
+  border-radius: 16px;
+  background: #19052a;
+  border: 1px solid #7026a8;
+  transition: .2s;
+}
+
+.jogo:active {
+  transform: scale(.96);
+}
+
+.icone {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.jogo h3 {
+  margin-bottom: 5px;
+}
+
+.jogo p {
+  color: #aaa;
+  font-size: 11px;
+}
+
+/* ÁREA DO JOGO */
+
+#areaJogo {
+  display: none;
+  margin-top: 20px;
+  padding: 22px;
+  text-align: center;
+  border-radius: 18px;
+  background: #160422;
+  border: 1px solid #8e36d1;
+}
+
+#resultado {
+  font-size: 40px;
+  margin: 20px 0;
+  min-height: 50px;
